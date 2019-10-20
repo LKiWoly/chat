@@ -12,6 +12,7 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.bignerdranch.android.chat.R;
 import com.bignerdranch.android.chat.Utils.Constants;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 String message = editTextUserMessage.getText().toString();
 
                 if (message.length() > Constants.MAX_LENGTH_MESSAGE) {
-                    // добавить подсказку
+                    Toast.makeText(getApplicationContext(), Constants.TOAST_TEXT_MAX_LENGTH_MESSAGE,Toast.LENGTH_SHORT).show();
                     return;
                 }
 

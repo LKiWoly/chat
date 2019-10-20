@@ -9,4 +9,5 @@ public class Constants {
     public static final String ALERT_DIALOG_NEGATIVE_BUTTON_TEXT = "Exit";
     public static final String ALERT_DIALOG_POSITIVE_BUTTON_TEXT = "Join chat";
     public static final String DEFAULT_USER_NICK_NAME = "ANONYMOUS";
+    public static final String TOAST_TEXT_MAX_LENGTH_MESSAGE = "Max message length - 50symbols";
 }
